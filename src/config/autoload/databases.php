@@ -11,15 +11,15 @@ declare(strict_types=1);
  */
 return [
     'default' => [
-        'driver' => env('DB_DRIVER', 'mysql'),
-        'host' => env('DB_HOST', 'localhost'),
-        'database' => env('DB_DATABASE', 'hyperf'),
-        'port' => env('DB_PORT', 3306),
-        'username' => env('DB_USERNAME', 'root'),
-        'password' => env('DB_PASSWORD', ''),
-        'charset' => env('DB_CHARSET', 'utf8'),
-        'collation' => env('DB_COLLATION', 'utf8_unicode_ci'),
-        'prefix' => env('DB_PREFIX', ''),
+        'driver' => 'mysql',
+        'host' => env('DB_HOST'),
+        'database' => env('DB_DATABASE', 'main_db'),
+        'port' => 3306,
+        'username' => env('DB_USERNAME'),
+        'password' => env('DB_PASSWORD'),
+        'charset' => 'utf8mb4',
+        'collation' => 'utf8mb4_unicode_ci',
+        'prefix' => '',
         'pool' => [
             'min_connections' => 1,
             'max_connections' => 10,
